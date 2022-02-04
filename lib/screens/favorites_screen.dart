@@ -11,7 +11,10 @@ class FavoritesScreen extends StatelessWidget {
 
     if (favorietesMeals.isEmpty) {
       return Center(
-        child: Text("You hanve no favorites yet, start adding some!"),
+        child: Text(
+          "You have no favorites yet, start adding some!",
+          style: Theme.of(context).textTheme.headline1,
+        ),
       );
     } else {
       return Scaffold(

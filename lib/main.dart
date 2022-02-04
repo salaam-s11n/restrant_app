@@ -82,13 +82,13 @@ class _MyAppState extends State<MyApp> {
       title: 'Flutter Demo',
       theme: ThemeData(
           primarySwatch: Colors.teal,
-          accentColor: Colors.greenAccent,
+          accentColor: Colors.lightBlueAccent[100],
           canvasColor: Color(0xffffffff),
           textTheme: ThemeData.light().textTheme.copyWith(
                 bodyText1: TextStyle(color: Colors.white, fontSize: 24),
                 bodyText2: TextStyle(color: Colors.black),
                 headline1: TextStyle(
-                    fontSize: 20,
+                    fontSize: 22,
                     fontFamily: "RobotoCondensed",
                     fontStyle: FontStyle.normal,
                     fontWeight: FontWeight.w400,

@@ -50,13 +50,14 @@ class _CategoresMealsScreenState extends State<CategoresMealsScreen> {
       appBar: AppBar(
         title: Text(
           "$categoryTitle",
-          style: TextStyle(
-            fontFamily: "RobotoCondensed",
-            fontSize: 24,
-            fontStyle: FontStyle.normal,
-          ),
+          style: Theme.of(context).textTheme.headline1,
         ),
+        leading: BackButton(
+          color: Colors.black,
+        ),
+        elevation: 1,
         centerTitle: true,
+        backgroundColor: Colors.white,
       ),
       body: isPortrait
           ? SafeArea(

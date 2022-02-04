@@ -46,13 +46,23 @@ class _FilltersScreenState extends State<FilltersScreen> {
           ],
           title: Text(
             "Fillters",
-            style: TextStyle(
-              fontFamily: "RobotoCondensed",
-              fontSize: 24,
-              fontStyle: FontStyle.normal,
-            ),
+            style: Theme.of(context).textTheme.headline1,
           ),
+          elevation: 1,
           centerTitle: true,
+          backgroundColor: Colors.white,
+          leading: Builder(builder: (BuildContext context) {
+            return IconButton(
+              icon: Icon(
+                Icons.menu_rounded,
+                color: Colors.black,
+              ),
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              },
+              tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+            );
+          }),
         ),
         drawer: MainDrawer(),
         body: Column(

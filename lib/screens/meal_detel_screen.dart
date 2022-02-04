@@ -21,18 +21,24 @@ class MealDetailScreen extends StatelessWidget {
         appBar: AppBar(
           title: Text(
             selectedMeal.title,
-            style: Theme.of(context).textTheme.headline2,
+            style: Theme.of(context).textTheme.headline1,
           ),
+          leading: BackButton(
+            color: Colors.black,
+          ),
+          elevation: 1,
+          centerTitle: true,
+          backgroundColor: Colors.white,
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () => addToFaivoretes(mealId),
           child: isMealFavoretes(mealId)
               ? Icon(
                   Icons.favorite_rounded,
-                  color: Colors.white,
+                  color: Colors.teal,
                 )
               : Icon(Icons.favorite_outline_rounded),
-          backgroundColor: Colors.teal,
+          backgroundColor: Colors.white,
         ),
         body: isPortrait
             ? SingleChildScrollView(
@@ -71,7 +77,7 @@ class MealDetailScreen extends StatelessWidget {
                           );
                         },
                       ),
-                      MediaQuery.of(context).size.height * 0.2,
+                      MediaQuery.of(context).size.height * 0.25,
                     ),
                     BuildTitleWidget(context, 'Steps'),
                     BuildContenerForList(
@@ -109,7 +115,7 @@ class MealDetailScreen extends StatelessWidget {
                           );
                         },
                       ),
-                      MediaQuery.of(context).size.height * 0.2,
+                      MediaQuery.of(context).size.height * 0.25,
                     )
                   ],
                 ))
@@ -298,14 +304,14 @@ class MealDetailScreen extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
           border: Border.all(
             color: Colors.teal.withOpacity(0.5),
-            width: 1,
+            width: 0.2,
           ),
           boxShadow: [
             BoxShadow(
               color: Colors.grey.withOpacity(0.5),
-              spreadRadius: 2,
-              blurRadius: 3,
-              offset: Offset(0, 2), // changes position of shadow
+              spreadRadius: 0.2,
+              blurRadius: 0.2,
+              offset: Offset(0, 1.5), // changes position of shadow
             ),
           ]),
       padding: EdgeInsets.symmetric(

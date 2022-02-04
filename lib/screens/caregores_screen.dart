@@ -8,30 +8,20 @@ class Categories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: const Text(
-      //     "Meal App",
-      //     style: TextStyle(
-      //       fontFamily: "RobotoCondensed",
-      //       fontSize: 24,
-      //       fontStyle: FontStyle.normal,
-      //     ),
-      //   ),
-      //   centerTitle: true,
-      // ),
       body: GridView(
         physics: BouncingScrollPhysics(),
         padding: const EdgeInsets.all(19),
         gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
             maxCrossAxisExtent: 200,
-            childAspectRatio: 3 / 2.3,
-            crossAxisSpacing: 20,
-            mainAxisSpacing: 20),
+            childAspectRatio: 2.5 / 2.3,
+            crossAxisSpacing: 15,
+            mainAxisSpacing: 15),
         children: DUMMY_CATEGORIES
             .map((catData) => CatergoresItem(
                   id: catData.id,
                   title: catData.title,
                   color: catData.color,
+                  image: catData.image,
                 ))
             .toList(),
       ),

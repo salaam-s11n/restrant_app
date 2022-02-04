@@ -8,51 +8,71 @@ const DUMMY_CATEGORIES = [
     id: 'c1',
     title: 'Italian',
     color: Colors.purple,
+    image:
+        'https://media.istockphoto.com/photos/full-table-of-italian-meals-on-plates-pizza-pasta-ravioli-carpaccio-picture-id1227415751?b=1&k=20&m=1227415751&s=170667a&w=0&h=7BO67R9KTuIzLmUEKY-qXx0PS9jxs3CsFK1rQy6iqbw=',
   ),
   Category(
     id: 'c2',
     title: 'Quick & Easy',
     color: Colors.red,
+    image:
+        'https://images.unsplash.com/photo-1616205255807-b55f2513eced?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80',
   ),
   Category(
     id: 'c3',
     title: 'Hamburgers',
     color: Colors.orange,
+    image:
+        'https://media.istockphoto.com/photos/delicious-hamburgers-picture-id496389174?b=1&k=20&m=496389174&s=170667a&w=0&h=1k9HlBgGsSEd4TkUF6UtYLnM3nhknpo7qEvUUnM0eVs=',
   ),
   Category(
     id: 'c4',
     title: 'German',
     color: Colors.amber,
+    image:
+        'https://images.unsplash.com/photo-1599921841143-819065a55cc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Z2VybWFuJTIwZm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
   ),
   Category(
     id: 'c5',
     title: 'Light & Lovely',
     color: Colors.blue,
+    image:
+        'https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGxpZ2h0JTIwJTI2JTIwbG92ZWx5JTIwZm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
   ),
   Category(
     id: 'c6',
     title: 'Exotic',
     color: Colors.green,
+    image:
+        'https://media.istockphoto.com/photos/homemade-spicy-shrimp-tacos-picture-id542331706?b=1&k=20&m=542331706&s=170667a&w=0&h=5rmmGDqB_bVCI6ViA403rxsPPlogcxVmiW8i7Nr2QGQ=',
   ),
   Category(
     id: 'c7',
     title: 'Breakfast',
     color: Colors.lightBlue,
+    image:
+        'https://media.istockphoto.com/photos/breakfast-with-bacon-eggs-pancakes-and-toast-picture-id533645537?b=1&k=20&m=533645537&s=170667a&w=0&h=soL3LM7t-t35nDjG62WvPBWvo7Eyw0mO9GEnthc8B4w=',
   ),
   Category(
     id: 'c8',
     title: 'Asian',
     color: Colors.lightGreen,
+    image:
+        'https://media.istockphoto.com/photos/classic-thai-food-dishes-picture-id1312283557?b=1&k=20&m=1312283557&s=170667a&w=0&h=hXAmitFiH9z0mK3GZdMDbkkcSl8Em84LIIlkHnVhpPE=',
   ),
   Category(
     id: 'c9',
     title: 'French',
     color: Colors.pink,
+    image:
+        'https://media.istockphoto.com/photos/breakfast-with-croissants-fresh-blueberries-tangerines-and-jam-on-the-picture-id1319662129?b=1&k=20&m=1319662129&s=170667a&w=0&h=_IIhZ0rWer4edvk8LN70BlcC71ty_8hDNkqEr4taPp4=',
   ),
   Category(
     id: 'c10',
     title: 'Summer',
     color: Colors.teal,
+    image:
+        'https://media.istockphoto.com/photos/preparation-of-ice-cream-from-strawberries-and-yogurt-picture-id695429678?b=1&k=20&m=695429678&s=170667a&w=0&h=OXAvkQh-SLsgsWKlIgniMQ27vIHI226C9kVveTNtPmQ=',
   ),
 ];
 
